@@ -491,3 +491,17 @@ swagger2sphinx_swagger_location = "api/swagger.json"
 
 # Autosummary issue resolver
 numpydoc_show_class_members = False
+
+def ultimateReplace(app, docname, source):
+    result = source[0]
+    for key in app.config.ultimate_replacements:
+        result = result.replace(key, app.config.ultimate_replacements[key])
+    source[0] = result
+
+ultimate_replacements = {
+    "{TEST}" : "staging"
+}
+
+def setup(app):
+   app.add_config_value('ultimate_replacements', {}, True)
+   app.connect('source-read', ultimateReplace)

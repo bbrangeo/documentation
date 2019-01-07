@@ -8,3 +8,5 @@ Tutorials
    :titlesonly:
 
     Tutorial: Retrieve elements of your model <retrieve-elements>
+
+.. http:get:: testing/replacement/{TEST}
