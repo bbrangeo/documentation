@@ -25,7 +25,7 @@ Step 2. Set up your project
 Once your app exists and you have your Access Token, you are able to use the API.
 Begin with the creation of a Cloud (`What's a cloud? <https://documentation.bimdata.io/v1.0/docs/cloud-1>`_), in which you create a Project (`What's a project? <https://documentation.bimdata.io/v1.0/docs/project-1>`_).
 In the script below, there is an example of the creation of a project in your Cloud through API, so you can have a `projectId`.
-First, define a name to create your first Cloud. Post this `name` on https://api-beta.bimdata.io/cloud using your Access Token. Then use the `cloudId` to create your first Project.
+First, define a name to create your first Cloud. Post this `name` on https://api-|context|.bimdata.io/cloud using your Access Token. Then use the `cloudId` to create your first Project.
 
 .. code:: python
 
@@ -39,11 +39,11 @@ First, define a name to create your first Cloud. Post this `name` on https://api
     cloud_name = {
         'name': 'Windows retrieval'
     }
-    response = requests.post(f'https://api-staging.bimdata.io/cloud', data=cloud_name, headers=headers)
+    response = requests.post(f'https://api-|context|.bimdata.io/cloud', data=cloud_name, headers=headers)
     assert response.status_code == 201
 
     cloud_id = response.json().get('id')
-    response = requests.post(f'https://api-staging.bimdata.io/cloud/{cloud_id}/project',  headers=headers)
+    response = requests.post(f'https://api-|context|.bimdata.io/cloud/{cloud_id}/project',  headers=headers)
     assert response.status_code == 201
 
     project_id = response.json().get('id')

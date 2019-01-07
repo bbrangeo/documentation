@@ -75,8 +75,8 @@ version = '1.0'
 release = '1.0 - latest'
 
 rst_prolog = """
-.. |psf| replace:: Python Software Foundation
-.. |context| replace:: dev
+.. |bd| replace:: BIMData.io
+.. |context| replace:: staging
 """
 
 #sphinx-contrib
