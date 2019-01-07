@@ -6,6 +6,8 @@
 Welcome to BIMData documentation!
 ================================================
 
+We are in the |context| context!
+
 BIMData provides you:
 
  * `BIMData Connect`_: authenticate and manage your applications
