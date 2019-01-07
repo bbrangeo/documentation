@@ -1,6 +1,7 @@
 .. meta::
     :github_url: https://github.com/bimdata/documentation/blob/master/doc_sphinx/index.rst
 
+.. include:: prolog
 
 ================================================
 Welcome to BIMData documentation!
