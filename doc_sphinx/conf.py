@@ -491,5 +491,3 @@ swagger2sphinx_swagger_location = "api/swagger.json"
 
 # Autosummary issue resolver
 numpydoc_show_class_members = False
-
-extlinks = {'api_url' : (settings.BASE_URL + '%s', settings.BASE_URL)}
