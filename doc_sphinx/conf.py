@@ -74,6 +74,11 @@ version = '1.0'
 # The full version, including alpha/beta/rc tags.
 release = '1.0 - latest'
 
+rst_prolog = """
+.. |psf| replace:: Python Software Foundation
+.. |context| replace:: dev
+"""
+
 #sphinx-contrib
 #scv_whitelist_branches = ('master', '1.0', 'dev', 'testing_new_features')
 
