@@ -40,9 +40,10 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
+    'sphinx-prompt',
+    'sphinx_substitution_extensions',
 ]
 
-extensions += ['sphinx-prompt', 'sphinx_substitution_extensions']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -74,10 +75,6 @@ version = '1.0'
 # The full version, including alpha/beta/rc tags.
 release = '1.0 - latest'
 
-rst_prolog = """
-.. |bd| replace:: BIMData.io
-.. |context| replace:: staging
-"""
 
 #sphinx-contrib
 #scv_whitelist_branches = ('master', '1.0', 'dev', 'testing_new_features')
