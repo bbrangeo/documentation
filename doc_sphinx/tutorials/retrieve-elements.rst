@@ -27,7 +27,7 @@ Begin with the creation of a Cloud (`What's a cloud? <https://documentation.bimd
 In the script below, there is an example of the creation of a project in your Cloud through API, so you can have a `projectId`.
 First, define a name to create your first Cloud. Post this `name` on https://api-|context|.bimdata.io/cloud using your Access Token. Then use the `cloudId` to create your first Project.
 
-.. code:: python
+.. substitution-code-block:: python
 
     import requests
 
@@ -61,7 +61,7 @@ Use the API to upload
 Use the `/cloud/{cloud_pk}/project/{project_pk}/document` route to upload your file.
 The `documentation for this route <https://api-beta.bimdata.io/doc#/project/createDocument>`_ is available on our API Reference page.
 
-.. code:: python
+.. substitution-code-block:: python
 
     import requests
 

@@ -496,3 +496,8 @@ swagger2sphinx_swagger_location = "api/swagger.json"
 
 # Autosummary issue resolver
 numpydoc_show_class_members = False
+
+substitutions = [
+    ('|context|', 'staging'),
+    ('|version|', 'dev'),
+]
