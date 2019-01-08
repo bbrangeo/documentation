@@ -41,7 +41,7 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
     'sphinx-prompt',
-    'sphinx_substitution_extensions',
+    'Sphinx-Substitution-Extensions',
 ]
 
 
