@@ -42,7 +42,7 @@ extensions = [
     'sphinx.ext.githubpages',
 ]
 
-
+extensions += ['sphinx-prompt', 'sphinx_substitution_extensions']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
