@@ -496,5 +496,10 @@ numpydoc_show_class_members = False
 
 substitutions = [
     ('|context|', 'staging'),
-    ('|version|', 'dev'),
+    ('|bd|', 'BIMData.io'),
 ]
+
+ rst_prolog = """
+.. |context| replace:: staging
+.. |bd| replace:: BIMData.io
+"""
