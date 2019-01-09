@@ -499,7 +499,7 @@ substitutions = [
     ('|bd|', 'BIMData.io'),
 ]
 
- rst_prolog = """
+rst_prolog = """
 .. |context| replace:: staging
 .. |bd| replace:: BIMData.io
 """
